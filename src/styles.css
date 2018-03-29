@@ -5,3 +5,11 @@ body {
 .headline {
   color: white;
 }
+
+.top-spacer {
+  margin-top: 40px;
+}
+
+.bottom-spacer {
+  margin-bottom: 40px;
+}
