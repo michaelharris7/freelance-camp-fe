@@ -99,7 +99,7 @@
             <div [hidden]="weeks_to_complete.valid || weeks_to_complete.pristine"
                  class = 'alert alert-danger'
             >
-              You need to enter the amount of weeks you estimate to complete the project.
+              You need to enter the amount of weeks you estimate your project will take to complete.
             </div>
             <label for="weeks_to_complete">Weeks to Complete</label>
             <input type="number"
@@ -122,6 +122,14 @@
                    [(ngModel)]="proposal.client_email"
             >
           </div>
+
+          <button type="submit"
+                  class="btn btn-outline-primary btn-lg"
+                  [disabled]="!proposalForm.form.valid"
+                  [hidden]="submitted"
+          >
+            Generate Proposal
+          </button>
         </form>
       </div>
     </div>

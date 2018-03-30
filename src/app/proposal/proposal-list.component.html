@@ -3,6 +3,7 @@
     <a class="list-group-item list-group-item-action active">
       <h1 class="headline">Proposal List</h1>
     </a>
+
     <a (click)="goToShow(proposal)"
        *ngFor="let proposal of proposals"
        class="list-group-item list-group-item-action proposal-link"
@@ -12,6 +13,5 @@
         {{ proposal.hourly_rate * proposal.estimated_hours | currency:'USD':'true':'.0' }}
       </p>
     </a>
-
   </div>
 </div>
